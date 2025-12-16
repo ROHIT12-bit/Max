@@ -61,7 +61,8 @@ Reply to a URL with `/bypass`"""
 
     wait_msg = await message.reply_text(
         f"*Processing:*
-`{target_url}`", disable_web_page_preview=True
+`{target_url}`",
+        disable_web_page_preview=True
     )
 
     info, err = await bp_info("bypass", target_url)
