@@ -59,6 +59,7 @@ async def bypass_cmd(client: Client, message: Message):
 Reply to a URL with `/bypass`"""
         )
 
+    # NO f-strings here, plain .format()
     wait_msg = await message.reply_text(
         "*Processing:*
 `{}`".format(target_url),
