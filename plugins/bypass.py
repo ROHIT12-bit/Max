@@ -60,15 +60,15 @@ Reply to a URL with `/bypass`"""
         )
 
     wait_msg = await message.reply_text(
-        f"*Processing:*
-`{target_url}`",
+        "*Processing:*
+`{}`".format(target_url),
         disable_web_page_preview=True
     )
 
     info, err = await bp_info("bypass", target_url)
     if err:
-        return await wait_msg.edit_text(f"**Error:**
-`{err}`")
+        return await wait_msg.edit_text("**Error:**
+`{}`".format(err))
 
     service = _pretty_service(info.get("service"))
     title = info.get("title")
@@ -83,7 +83,7 @@ Reply to a URL with `/bypass`"""
     )
     links_text = bp_links_text(info.get("links") or {})
 
-    final_text = f"{caption}
+    final_text = "{}
 
-{links_text}"
+{}".format(caption, links_text)
     await wait_msg.edit_text(final_text, disable_web_page_preview=False)
