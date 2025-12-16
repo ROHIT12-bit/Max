@@ -52,12 +52,12 @@ async def bypass_cmd(client: Client, message: Message):
         return
 
     target_url = _extract_url_from_message(message)
-        if not target_url:
+    if not target_url:
         return await message.reply_text(
             """**Usage:**
 /bypass <url>  or
 Reply to a URL with `/bypass`"""
-)
+        )
 
     wait_msg = await message.reply_text(
         f"*Processing:*
