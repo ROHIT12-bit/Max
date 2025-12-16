@@ -15,8 +15,7 @@ class Config:
 `Size:` {filesize} | `Format:` {file_format}
 """
 
-    START_TEXT = (
-        "Hey, I can bypass supported links.
-"
-        "Use /bypass <url> or reply /bypass to a link."
-    )
+    START_TEXT = """
+Hey, I can bypass supported links.
+Use /bypass <url> or reply /bypass to a link.
+"""
