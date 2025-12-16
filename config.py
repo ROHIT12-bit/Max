@@ -1,10 +1,10 @@
 import os
 
 class Config:
-    API_ID = int(os.getenv("API_ID", "12345"))
-    API_HASH = os.getenv("API_HASH", "your_api_hash")
-    BOT_TOKEN = os.getenv("BOT_TOKEN", "your_bot_token")
-    BOT_OWNER_ID = int(os.getenv("BOT_OWNER_ID", "123456789"))
+    API_ID = int(os.getenv("API_ID", "26047636"))
+    API_HASH = os.getenv("API_HASH", "d8b1ed69ae1f937c5dd4d3cc8c8de440")
+    BOT_TOKEN = os.getenv("BOT_TOKEN", "8329949144:AAFFCkR2QRW7ZRiKTy4yVr1_eZRcQ1s16eA")
+    BOT_OWNER_ID = int(os.getenv("BOT_OWNER_ID", "8367080346"))
 
     # Caption template for bypass results
     # Available placeholders: {service}, {title}, {filesize}, {file_format}
